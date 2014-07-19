@@ -40,7 +40,7 @@ With *C*, let's make a histogram of the total number of steps taken each day:
 hist(C$steps, xlab="Total Steps Per Day", col="red", main = "Histogram Of Total Steps Per Day")
 ```
 
-![plot of chunk unnamed-chunk-4](figure/unnamed-chunk-4.png) 
+![plot of chunk question_1_histogram](figure/question_1_histogram.png) 
 
 This is the mean of the total number of steps taken each day:
 
@@ -81,7 +81,7 @@ With *D*, let's make our time series plot:
 plot(D$interval, D$avg_steps, type="l", xlab= "5-Minute Interval", ylab="Average Steps Taken", col = "blue")
 ```
 
-![plot of chunk unnamed-chunk-8](figure/unnamed-chunk-8.png) 
+![plot of chunk question_2_plot](figure/question_2_plot.png) 
 
 This is the 5-minute interval that contains the maximum average number of steps:
 
@@ -130,7 +130,7 @@ With *H*, let's make a histogram of the total number of steps taken each day:
 hist(H$steps, xlab="Total Steps Per Day", col="red", main = "Histogram Of Total Steps Per Day")
 ```
 
-![plot of chunk unnamed-chunk-13](figure/unnamed-chunk-13.png) 
+![plot of chunk missing_value_histogram](figure/missing_value_histogram.png) 
 
 This is the mean of the total number of steps taken each day:
 
@@ -188,15 +188,7 @@ library(lattice)
 xyplot(J$avg_steps~J$interval|J$weekgroup, type ="l",layout=c(1,2), ylab="Number of steps", xlab="Interval")
 ```
 
-![plot of chunk unnamed-chunk-18](figure/unnamed-chunk-18.png) 
-
-```r
-knit2html()
-```
-
-```
-## Error: object 'input2' not found
-```
+![plot of chunk question_3_plot](figure/question_3_plot.png) 
 
 
 

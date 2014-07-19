@@ -34,7 +34,7 @@ C <- data.frame(date=C$Group.1, steps=C$x)
 
 With *C*, let's make a histogram of the total number of steps taken each day:
 
-```{r, echo = TRUE}
+```{r question_1_histogram, echo = TRUE}
 hist(C$steps, xlab="Total Steps Per Day", col="red", main = "Histogram Of Total Steps Per Day")
 
 ```
@@ -65,7 +65,7 @@ D <- data.frame(interval=D$Group.1, avg_steps=D$x)
 ```
 
 With *D*, let's make our time series plot:
-```{r, echo = TRUE}
+```{r  question_2_plot, echo = TRUE}
 plot(D$interval, D$avg_steps, type="l", xlab= "5-Minute Interval", ylab="Average Steps Taken", col = "blue")
 
 ```
@@ -103,7 +103,7 @@ H <- data.frame(date=H$Group.1, steps=H$x)
 
 With *H*, let's make a histogram of the total number of steps taken each day:
 
-```{r, echo = TRUE}
+```{r missing_value_histogram, echo = TRUE}
 hist(H$steps, xlab="Total Steps Per Day", col="red", main = "Histogram Of Total Steps Per Day")
 
 ```
@@ -143,7 +143,7 @@ J <- data.frame(weekgroup=J$Group.1, interval = J$Group.2, avg_steps=J$x)
 
 Here is the panel plot containing a time series plot of the 5-minute interval and the average number of steps taken, averaged across all weekday days or weekend days.
 
-```{r, echo = TRUE}
+```{r question_3_plot, echo = TRUE}
 library(lattice) 
 xyplot(J$avg_steps~J$interval|J$weekgroup, type ="l",layout=c(1,2), ylab="Number of steps", xlab="Interval")
 
